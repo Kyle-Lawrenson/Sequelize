@@ -7,6 +7,7 @@ app.use(bookRouter);
 
 const addBook = require("./controllers/addBook");
 const getBook = require("./controllers/getBook");
+const getAuthor = require("./controllers/getAuthor.js");
 // const updateBook = require("./controllers/updateBook");
 // const delBook = require("./controllers/delBook");
 
@@ -30,6 +31,8 @@ app.listen(port, () => console.log(`Server running on port ${port}`));
 app.post("/addbook", addBook);
 
 app.get("/listbook", getBook);
+
+app.get("/listauthor", getAuthor);
 
 // app.put("/book", updateBook);
 
