@@ -5,12 +5,6 @@ const app = express();
 app.use(express.json());
 app.use(bookRouter);
 
-const addBook = require("./controllers/addBook");
-const getBook = require("./controllers/getBook");
-const getAuthor = require("./controllers/getAuthor.js");
-const updateBook = require("./controllers/updateBook");
-// const delBook = require("./controllers/delBook");
-
 const Book = require ("./db/models/bookmodel");
 
 function syncTables() {
@@ -28,12 +22,12 @@ syncTables();
 app.listen(port, () => console.log(`Server running on port ${port}`));
 
 
-app.post("/addbook", addBook);
+// app.post("/addbook", addBook);
 
-app.get("/listbook", getBook);
+// app.get("/listbook", getBook);
 
-app.get("/showauthorsbooks", getAuthor);
+// app.get("/showauthorsbooks", getAuthor);
 
-app.put("/editbook", updateBook);
+// app.put("/editbookauthor", updateBookAuthor);
 
-// app.delete("/book", deleteBook);
+// app.delete("/delbook", delBook);
