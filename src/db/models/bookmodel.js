@@ -1,4 +1,4 @@
-const {DataTypes} = require ("sequelize")
+const { DataTypes } = require("sequelize")
 
 const SQLconnection = require("../connection.js")
 
@@ -13,7 +13,7 @@ const Book = SQLconnection.define("Book", {
     title: {
         type: DataTypes.STRING,
         unique: true,
-        allowNull:false
+        allowNull: false
     },
     author: {
         type: DataTypes.STRING
