@@ -8,7 +8,7 @@ app.use(bookRouter);
 const addBook = require("./controllers/addBook");
 const getBook = require("./controllers/getBook");
 const getAuthor = require("./controllers/getAuthor.js");
-// const updateBook = require("./controllers/updateBook");
+const updateBook = require("./controllers/updateBook");
 // const delBook = require("./controllers/delBook");
 
 const Book = require ("./db/models/bookmodel");
@@ -32,8 +32,8 @@ app.post("/addbook", addBook);
 
 app.get("/listbook", getBook);
 
-app.get("/listauthor", getAuthor);
+app.get("/showauthorsbooks", getAuthor);
 
-// app.put("/book", updateBook);
+app.put("/editbook", updateBook);
 
 // app.delete("/book", deleteBook);

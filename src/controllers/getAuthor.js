@@ -7,7 +7,7 @@ const getAuthor = async (req, res) => {
         }
     })
     const responseMessage = {
-        msg: "List of authors found.",
+        msg: `showing the books by ${req.body.author}.`,
         books: result
     }
     res.status(200).send(responseMessage);
