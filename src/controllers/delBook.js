@@ -18,25 +18,4 @@ const delBook = async (req, res) => {
       }
     };
 
-
-//     if (result === null) {
-//         const responseMessage = {
-//             msg: "Book not found"
-//         }
-//         res.status(400).send(responseMessage);
-//     } else if {
-//         const responseMessage = {
-//             msg: "Book has been deleted.",
-//             dbresponse: result
-//         }
-//         res.status(200).send(responseMessage);
-//     } else {
-//         const responseMessage = {
-//             msg: "HUH",
-//             dbresponse: result
-//         res.status(500).send(responseMessage);
-//         console.log("UH WHAT",error)
-//     }
-// }
-
 module.exports = delBook

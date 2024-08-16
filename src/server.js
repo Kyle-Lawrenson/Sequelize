@@ -20,14 +20,3 @@ app.get("/health", (req, res) => {
 });
 syncTables();
 app.listen(port, () => console.log(`Server running on port ${port}`));
-
-
-// app.post("/addbook", addBook);
-
-// app.get("/listbook", getBook);
-
-// app.get("/showauthorsbooks", getAuthor);
-
-// app.put("/editbookauthor", updateBookAuthor);
-
-// app.delete("/delbook", delBook);

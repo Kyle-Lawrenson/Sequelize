@@ -8,12 +8,12 @@ const delBook = require("../controllers/delBook.js");
 
 bookRouter.post("/addBook", addBook)
 
-bookRouter.get("/listbook", getBook);
+bookRouter.get("/listBook", getBook);
 
-bookRouter.get("/showauthorsbooks", getAuthor);
+bookRouter.get("/showAuthorsBooks", getAuthor);
 
-bookRouter.put("/editbookauthor", updateBookAuthor);
+bookRouter.put("/editBookAuthor", updateBookAuthor);
 
-bookRouter.delete("/delbook", delBook);
+bookRouter.delete("/delBook", delBook);
 
 module.exports = bookRouter
